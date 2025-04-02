@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  color: #333;
+  background: linear-gradient(
+    110.6deg,
+    rgb(184, 142, 252) 2.2%,
+    rgb(104, 119, 244) 100.2%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h4,
+li {
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #787cf6;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #5a5ee0;
+}
+
+.party-management {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tracker-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-top: 2px solid #eee;
+  margin-top: 30px;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.initiative-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.initiative-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.initiative-list li span {
+  display: inline-block;
+}
+
+#hp-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.player-card {
+  border-left: 5px solid #4285f4;
+}
+
+.monster-card {
+  border-left: 5px solid #ea4335;
+}
+
+.card input {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button.damage {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.heal {
+  background-color: #28a745;
+  color: white;
+}
+
+button.max-hp {
+  background-color: #17a2b8;
+  color: white;
+}
+
+button.temp-hp {
+  background-color: #ffc107;
+  color: black;
+}
+
+.initiative-display {
+  font-weight: bold;
+  margin: 5px 0;
+  padding: 2px 5px;
+  background-color: #e3e3ff;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+#add-monster {
+  background-color: #ea4335;
+}
+
+#clear-all {
+  background-color: #dc3545;
+}
+
+@media (max-width: 600px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  #hp-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

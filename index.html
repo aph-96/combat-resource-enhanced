@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&D Combat Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>D&D Combat Manager</h1>
+
+      <!-- Party Management Section -->
+      <div class="party-management">
+        <button id="save-party">Save Party</button>
+        <button id="load-party">Load Party</button>
+        <button id="clear-all">Clear All</button>
+      </div>
+
+      <!-- Character Creation -->
+      <section id="character-creation">
+        <h2>Add Characters</h2>
+        <div class="button-group">
+          <button id="add-player">Add Player</button>
+          <button id="add-monster">Add Monster</button>
+        </div>
+        <div id="hp-cards"></div>
+      </section>
+
+      <!-- Initiative Tracker -->
+      <div class="tracker-container">
+        <h2>Initiative Tracker</h2>
+        <p>Add initiative for existing characters:</p>
+        <div class="form-group">
+          <input type="text" id="nameInput" placeholder="Character Name" />
+          <input type="number" id="initiativeInput" placeholder="Initiative" />
+          <button id="addButton">Set Initiative</button>
+        </div>
+        <ul class="initiative-list" id="initiativeList">
+          <!-- List items will be dynamically added here -->
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
